@@ -18,8 +18,15 @@ const Navbar = () => {
             <button>Sign Up</button>
         </div>
      </div>
+     <hr />
+     <div className="menu">
+      <span>Test</span>
+      <span>Test</span>
+      <span>Test</span>
+      <span>Test</span>
+     </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
