@@ -13,8 +13,8 @@ const Navbar = () => {
             <span>Business Pro</span>
             <span>Explore</span>
             <span>English</span>
-            <span>Sign in</span>
             <span>Become a Seller</span>
+            <span>Sign in</span>
             <button>Sign Up</button>
         </div>
      </div>
