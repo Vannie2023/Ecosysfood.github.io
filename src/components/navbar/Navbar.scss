@@ -1,5 +1,43 @@
-.navbar{
+.navbar {
     display: flex;
     justify-content:center;
     background-color:#E67E22;
+
+    .container {
+        width: 1400px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px;
+    .logo {
+        font-size: 34px;
+        font-weight: bold;
+    .text {
+    }
+    .dot {
+        color:blue
+    }
+    }
+.links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+      
+    button {
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: 1px solid white;
+        cursor: pointer;
+        background-color: transparent;
+
+       &:hover{
+        background-color: #E67E22;
+        border-color: #E67E22;
+       } 
+    }
+
+}
+    }
 }
