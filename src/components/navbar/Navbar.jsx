@@ -4,6 +4,7 @@ import "./Navbar.scss"
 const Navbar = () => {
 
   const [active, setActive] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const isActive = ()=>{
     window.scrollY > 0 ? setActive(true) : setActive(false);
@@ -38,10 +39,10 @@ const Navbar = () => {
             <span>Sign in</span>
             {!currentUser && <button>Sign Up</button>}
             {currentUser && (
-              <div className="user">
-                <img src="" alt="" />
+              <div className="user" onClick={()=>setOpen(!open)}>
+                <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
                 <span>{currentUser?.username}</span>
-                <div className="options">
+                {open && <div className="options">
                   {
                     currentUser?.isSeller && (
                       <>
@@ -49,18 +50,18 @@ const Navbar = () => {
                       <span>Add New Gig</span>
                       </>
                     )}
-                </div>
-              </div>
+                    <span>Orders</span>
+                    <span>Messages</span>
+                    <span>Logout</span>
+              </div>}
+              </div>    
             )}
-            <span>Orders</span>
-            <span>Messages</span>
-            <span>Logout</span>
         </div>
-     </div>
-      {active && (
-       <>
-         <hr />
-         <div className="menu">
+        </div>
+        {active && (
+         <>
+          <hr />
+          <div className="menu">
            <span>Test</span>
            <span>Test</span>
            <span>Test</span>
