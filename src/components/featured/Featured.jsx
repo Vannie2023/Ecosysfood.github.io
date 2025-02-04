@@ -17,7 +17,7 @@ const Featured = () => {
             <div className="popular">
                 <span>popular:</span>
                 <button>Web Design</button>
-                <button>Word Press</button>
+                <button>WordPress</button>
                 <button>Logo Design</button>
                 <button>AI Services</button>
 
