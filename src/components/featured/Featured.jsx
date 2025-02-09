@@ -1,10 +1,7 @@
 import React from 'react'
 import "./Featured.scss"
 
-
-/*const Featured = () => {
-  */
-  function Featured() {
+ function Featured() {
   return (
     <div className="featured">
         <div className="container">

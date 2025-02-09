@@ -1,10 +1,10 @@
-.trustedBy{
-    background-color: #fafafa;
+.trustedBy {
+  background-color: #fafafa;
   height: 100px;
   display: flex;
   justify-content: center;
 
-    .container{
+  .container {
     max-width: 760px;
     display: flex;
     align-items: center;
@@ -13,8 +13,8 @@
     font-weight: 500;
 
     img{
-        height: 50px;
-        object-fit: contain;
-      }
+      height: 50px;
+      object-fit: contain;
     }
+  }
 }
